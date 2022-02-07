@@ -1,0 +1,55 @@
+@media (min-width: 1001px) {
+    .footer-item .footer-list-tel {
+        display: none;
+    }
+}
+@media (max-width: 1000px) {
+    .container {
+        max-width: 738px;
+    }
+    .header-logo {
+        width: 150px;
+        height: 48px;
+        background-size: contain;
+    }
+    .header-nav {
+        gap: 22px;
+    }
+    .header-item {
+        flex-basis: 75.5%;
+    }
+    .banner-box {
+        margin-top: 72px;
+        background-position: -80px center;
+        padding: 100px 40px 120px;
+    }
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 15px;
+    }
+
+    .footer {
+        padding-top: 62px;
+    }
+    .footer-tel {
+        display: none;
+    }
+    .additional {
+        overflow: hidden;
+        height: 555px;
+    }
+    .additional .menu-grid {
+        display: flex;
+        width: auto;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding-bottom: 50px;
+    }
+    .additional .menu-grid-item {
+        flex: 0 0 281px;
+    }
+    .additional .menu-grid-thumb,
+    .additional .menu-grid-thumb img {
+        height: 320px;
+    }
+}

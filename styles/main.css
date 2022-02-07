@@ -146,7 +146,8 @@ header {
     background-image: url(../images/banner.png);
     margin-top: 140px;
     margin-bottom: 103px;
-    padding: 100px;
+    padding: 80px;
+    background-position: 0 center;
 }
 .banner h2 {
     font-size: 60px;
@@ -190,10 +191,14 @@ header {
     border-radius: 5px;
     box-sizing: border-box;
     border: 1px solid #FBB731;
+    transition: 0.2s;
 }
 .banner-link:hover {
     background-color: transparent;
     color: #FBB731;
+}
+.menu {
+    padding-top: 20px;
 }
 .menu-header {
     display: flex;
@@ -268,7 +273,7 @@ header {
 .menu-grid-icon {
     width: 18px;
     height: 18px;
-    background-image: url(./images/cart-menu.svg);
+    background-image: url(../images/cart-menu.svg);
     background-repeat: no-repeat;
 
 }
@@ -283,6 +288,7 @@ header {
     padding: 9px 37px 8px 29px;
     align-items: center;
     cursor: pointer;
+    transition: 0.2s;
 }
 .menu-grid-btn:hover {
     background-color: #F37335;
@@ -351,6 +357,29 @@ header {
 .footer-tel li {
     margin-bottom: 12px;
 }
+.button-up {
+    background-color: #FBB731;
+    font-weight: 700;
+    font-size: 14px;
+    color: #1E2F40;
+    line-height: 1.5;
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 30px;
+    transition: 500ms;
+    border-radius: 5px;
+}
+.button-up.hidden {
+    opacity: 0;
+}
+.button-up.visible {
+    opacity: 1;
+}
+.button-up:hover {
+    background-color: #F37335;
+}
 
 /* style INDEX */
 
@@ -399,11 +428,17 @@ h1 span {
     background-color: #FBB731;
     border-radius: 5px;
     text-decoration: none;
-    padding: 20px 45px;
+    padding: 19px 45px;
     display: inline-block;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
+    border: 1px solid #FBB731;
+}
+.main a:hover,
+.promo a:hover {
+    background-color: transparent;
+    color: #FBB731;
 }
 .visual {
     flex-grow: 1;
