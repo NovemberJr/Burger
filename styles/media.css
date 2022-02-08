@@ -3,6 +3,11 @@
         display: none;
     }
 }
+@media (min-width: 766px) {
+    .header-burger {
+        display: none;
+    }
+}
 @media (max-width: 1000px) {
     .container {
         max-width: 738px;
@@ -43,7 +48,7 @@
         width: auto;
         overflow-x: scroll;
         overflow-y: hidden;
-        padding-bottom: 50px;
+        padding-bottom: 20vw;
     }
     .additional .menu-grid-item {
         flex: 0 0 281px;
@@ -51,5 +56,147 @@
     .additional .menu-grid-thumb,
     .additional .menu-grid-thumb img {
         height: 320px;
+    }
+}
+@media (max-width: 765px) {
+    nav {
+        display: none;
+    }
+    .header {
+        gap: 21px;
+    }
+    .additional .container {
+        padding-right: 0;
+    }
+    .button-up.visible {
+        display: none;
+    }
+}
+@media (max-width: 567px) {
+    .header {
+        padding: 19px 0;
+    }
+    .header-logo {
+        width: 116px;
+        height: 37px;
+    }
+    .title {
+        margin: 27px 0 13px;
+    }
+    .banner-box {
+        margin: 33px 0;
+        padding: 35px 24px;
+    }
+    .breadcrumbs a {
+        font-size: 14px;
+    }
+    .title {
+        font-weight: 700;
+        font-size: 38px;
+    }
+    .description {
+        font-size: 12px;
+    }
+    .bg {
+        padding: 55px 0;
+    }
+    .banner-box {
+        background-position: 17% center;
+        padding: 35px 24px 54px;
+    }
+    .menu-title {
+        font-size: 27px;
+    }
+    .menu-select {
+        font-size: 12px;
+        flex-basis: 136px;
+        padding: 13px 15px;
+    }
+    .menu-grid {
+        gap: 40px 15px;
+        margin-bottom: 64px;
+    }
+    .menu-grid-thumb {
+        height: 56vw;
+    }
+    .menu-grid-thumb img {
+        height: 100%;
+    }
+    .menu-grid-title {
+        font-size: 24px;
+        margin-top: 14px;
+    }
+    .additional {
+        height: 100vw;
+    }
+    .additional .menu-grid-item {
+        flex: 0 0 38vw;
+    }
+    .additional .menu-grid-thumb {
+        height: 56vw;
+    }
+    .additional .menu-grid-thumb img {
+        height: 100%;
+    }
+    .footer {
+        margin-top: 40px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .footer-list + .footer-list-tel {
+        display: none;
+    }
+    .footer-tel {
+        display: block;
+        text-align: right;
+    }
+    .footer-box {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-areas: 'logo tel' 'link link' 'info info';
+        gap: 0;
+    }
+    .footer-item:nth-child(1) {
+        grid-area: logo;
+    }
+    .footer-item:nth-child(2) {
+        grid-area: link;
+    }
+    .footer-item:nth-child(3) {
+        grid-area: info;
+    }
+    .footer-item:nth-child(4) {
+        grid-area: tel;
+    }
+}
+@media (max-width: 475px) {
+    .menu-grid-title {
+        font-size: 13px;
+        margin-top: 14px;
+    }
+    .menu-grid-price {
+        font-size: 16px;
+    }
+    .menu-grid-btn {
+        margin-top: 8px;
+    }
+    
+}
+@media (max-width: 360px) {
+    .menu-grid {
+        gap: 22px 15px;
+        margin-bottom: 64px;
+    }    
+    .additional {
+        height: 366px;
+    }
+    .additional .menu-grid-thumb,
+    .additional .menu-grid-thumb img {
+        height: 180px;
+    }
+}
+@media (max-width: 320px) {
+    .banner-box {
+        background-position: 25% center;
     }
 }

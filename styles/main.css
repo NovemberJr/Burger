@@ -93,6 +93,8 @@ header {
     text-align: center;
     color: #FFFFFF;
     background-image: url(../images/bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
     padding-top: 144px;
     padding-bottom: 140px;
 }
@@ -144,6 +146,7 @@ header {
 }
 .banner-box {
     background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
     margin-top: 140px;
     margin-bottom: 103px;
     padding: 80px;
@@ -219,7 +222,9 @@ header {
     border-radius: 22px;
     font-size: 15px;
     color: #443737;
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     flex-basis: 279px;
     background-image: url(../images/chevron-down.svg);
     background-size: 12.79px 7.75px;
@@ -243,7 +248,8 @@ header {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%;
     height: 430px;
 }
@@ -304,13 +310,11 @@ header {
 .footer-box {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 .footer-logo {
     width: 63px;
     height: 56px;
-}
-.footer-item {
-    flex: 0 0 auto;
 }
 .footer-item h2 {
     font-size: 20px;
@@ -318,6 +322,7 @@ header {
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 19px;
+    line-height: 1.5;
 }
 .footer-list {
     margin-top: 0;
@@ -513,4 +518,48 @@ h1 span {
     font-weight: 700;
     margin-bottom: 10px;
     margin-top: 0;
+}
+
+/* Modal */
+.button-burger {
+    width: 34px;
+    height: 22px;
+    background-image: url(../images/button-burger.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+}
+.modal {
+    background-color: #FFF8DC;
+    max-width: 500px;
+    text-align: center;
+    position: absolute;
+    top: -400px;
+    left: 0;
+    right: 0;
+    margin: 0 auto 20px;
+    padding: 40px 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.modal .header-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+    margin: 0;
+}
+.modal-close {
+    width: 22px;
+    height: 22px;
+    background-image: url(../images/close.svg);
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
 }

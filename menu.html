@@ -11,11 +11,24 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/media.css">
+
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon/android-chrome-512x512.png">
+    <link rel="icon" sizes="16x16" href="favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
     <header id="headerTop">
         <div class="container">
             <div class="header">
+                <div class="header-burger">
+                    <button class="button-burger" onclick="openModal()"></button>
+                </div>
                 <div class="header-item">
                     <a href="index.html" class="header-logo"></a>
                     <nav>
@@ -66,7 +79,7 @@
             <div class="container">
                 <div class="menu-header">
                     <h2 class="menu-title">Бургеры</h2>
-                    <select name="" id="" class="menu-select">
+                    <select class="menu-select">
                         <option>Сортировать</option>
                         <option value="up">По возрастанию</option>
                         <option value="down">По убыванию</option>
@@ -236,6 +249,15 @@
         </div>
     </footer>
     <a href="#headerTop" class="button-up hidden" id="btnUp">Наверх</a>
+    <div class="modal" id="modal">
+        <ul class="header-nav">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#" class="active">Меню</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+        <button class="modal-close" onclick="closeModal()"></button>
+    </div>
     <script>
         // Smooth Scroll
       
@@ -280,6 +302,17 @@
                 document.getElementById('btnUp').className = 'button-up hidden';
             }
         }
+
+        // Menu
+
+       function openModal() {
+           document.getElementById("modal").style.top = "20px";
+       }
+
+       function closeModal() {
+           document.getElementById("modal").style.top = "-400px";
+       }
+
     </script>
 </body>
 </html>
