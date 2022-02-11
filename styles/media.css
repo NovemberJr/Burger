@@ -129,6 +129,9 @@
     .additional {
         height: 100vw;
     }
+    .additional .menu-grid {
+        padding-right: 15px;
+    }
     .additional .menu-grid-item {
         flex: 0 0 38vw;
     }

@@ -95,6 +95,7 @@ header {
     background-image: url(../images/bg.png);
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 144px;
     padding-bottom: 140px;
 }
